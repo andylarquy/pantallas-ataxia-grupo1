@@ -1,0 +1,88 @@
+<h1>Centros de Estudios Especializados</h1>
+
+<table mat-table [dataSource]="centrosDeEstudios" class="mat-elevation-z8">
+
+  <!-- Nombre Column -->
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+    <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+  </ng-container>
+
+  <!-- Direccion Column -->
+  <ng-container matColumnDef="direccion">
+    <th mat-header-cell *matHeaderCellDef> Direccion </th>
+    <td mat-cell *matCellDef="let element"> {{element.direccion}} </td>
+  </ng-container>
+
+  <!-- Pais Column -->
+  <ng-container matColumnDef="pais">
+    <th mat-header-cell *matHeaderCellDef> País </th>
+    <td mat-cell *matCellDef="let element"> {{element.pais}} </td>
+  </ng-container>
+
+  <!-- Provincia Column -->
+  <ng-container matColumnDef="provincia">
+    <th mat-header-cell *matHeaderCellDef> Provincia </th>
+    <td mat-cell *matCellDef="let element"> {{element.provincia}} </td>
+  </ng-container>
+
+  <!-- Telefono Column -->
+  <ng-container matColumnDef="telefono">
+    <th mat-header-cell *matHeaderCellDef> Teléfono </th>
+    <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="centrosDeEstudiosColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: centrosDeEstudiosColumns;"></tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1>Centros de Estudios Especializados</h1>
+
+<table mat-table [dataSource]="centrosDeAtencion" class="mat-elevation-z8">
+
+  <!-- Nombre Column -->
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+    <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+  </ng-container>
+
+  <!-- Direccion Column -->
+  <ng-container matColumnDef="direccion">
+    <th mat-header-cell *matHeaderCellDef> Direccion </th>
+    <td mat-cell *matCellDef="let element"> {{element.direccion}} </td>
+  </ng-container>
+
+  <!-- Pais Column -->
+  <ng-container matColumnDef="pais">
+    <th mat-header-cell *matHeaderCellDef> País </th>
+    <td mat-cell *matCellDef="let element"> {{element.pais}} </td>
+  </ng-container>
+
+  <!-- Provincia Column -->
+  <ng-container matColumnDef="provincia">
+    <th mat-header-cell *matHeaderCellDef> Provincia </th>
+    <td mat-cell *matCellDef="let element"> {{element.provincia}} </td>
+  </ng-container>
+
+  <!-- Telefono Column -->
+  <ng-container matColumnDef="telefono">
+    <th mat-header-cell *matHeaderCellDef> Teléfono </th>
+    <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
+  </ng-container>
+
+  <!-- Profesional Column -->
+  <ng-container matColumnDef="profesional">
+    <th mat-header-cell *matHeaderCellDef> Nombre Profesional </th>
+    <td mat-cell *matCellDef="let element"> {{element.profesional}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="centrosDeAtencionColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: centrosDeAtencionColumns;"></tr>
+</table>
