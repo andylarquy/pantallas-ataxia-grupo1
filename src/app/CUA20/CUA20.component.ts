@@ -20,12 +20,13 @@ const centrosDeAtencionHardcodeado = [
     profesional: 'Dr. Acosta'
   }
 ]
+
 @Component({
-  selector: 'app-CUT02',
-  templateUrl: './CUT02.component.html',
-  styles: []
+  selector: 'app-CUA20',
+  templateUrl: './CUA20.component.html',
+  styleUrls: []
 })
-export class CUT02Component implements OnInit {
+export class CUA20Component implements OnInit {
 
   centrosDeEstudios = centrosDeEstudiosHardcodeado
   centrosDeEstudiosColumns: string[] = ['nombre', 'direccion', 'pais', 'provincia', 'telefono', 'acciones']
@@ -33,12 +34,9 @@ export class CUT02Component implements OnInit {
   centrosDeAtencion = centrosDeAtencionHardcodeado
   centrosDeAtencionColumns: string[] = ['nombre', 'direccion', 'pais', 'provincia', 'telefono', 'profesional', 'acciones']
 
-
-
   constructor() { }
 
   ngOnInit() {
   }
 
 }
-
