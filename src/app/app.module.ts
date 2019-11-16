@@ -8,13 +8,15 @@ import { CUT02Component } from './CUT02/CUT02.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { CUA18Component } from './CUA18/CUA18.component';
+import { CUA19Component } from './CUA19/CUA19.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       CUT02Component,
       routingComponents,
-      CUA18Component
+      CUA18Component,
+      CUA19Component
    ],
    imports: [
       BrowserModule,
